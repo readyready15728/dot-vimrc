@@ -1,5 +1,5 @@
 # dot-vimrc
-.vimrc and any ancillary files
+## .vimrc and any ancillary files
 
 Unless explicitly specified otherwise, all files other than `.vimrc` itself are
 to be installed in `$HOME/.vim/`. `.vimrc` itself is of course meant to go
