@@ -8,3 +8,8 @@ currently only configured to work in a Unix(-like) environment. Additionally,
 it is necessary to install Vundle as described here:
 
 https://github.com/VundleVim/Vundle.vim
+
+Optionally, if you like it, you can install the eldar colorscheme for full
+compatibility with my configuration:
+
+https://github.com/agude/vim-eldar
