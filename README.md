@@ -9,7 +9,5 @@ it is necessary to install Vundle as described here:
 
 https://github.com/VundleVim/Vundle.vim
 
-Optionally, if you like it, you can install the eldar colorscheme for full
-compatibility with my configuration:
-
-https://github.com/agude/vim-eldar
+After all is said and done, run `:PluginInstall` in Vim to pull down the
+plugins.

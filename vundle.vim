@@ -14,6 +14,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'agude/vim-eldar'
 Plugin 'mxw/vim-jsx'
 Plugin 'leafgarland/typescript-vim'
 
