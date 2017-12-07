@@ -17,6 +17,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'agude/vim-eldar'
 Plugin 'mxw/vim-jsx'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'digitaltoad/vim-pug'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
