@@ -9,6 +9,7 @@ filetype plugin indent on
 syntax enable
 colorscheme eldar
 
+" File Type Handling
 autocmd BufRead,BufNewFile * setfiletype text
 autocmd FileType text setlocal autoindent textwidth=78 formatoptions+=n
 autocmd FileType markdown setlocal textwidth=78
@@ -18,31 +19,25 @@ autocmd FileType tex setlocal textwidth=78
 " set verbose=9
 " set verbosefile=~/.vim/verbose.log
 
-" Indenting
+" Indentation
 set expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType python setlocal shiftwidth=4 softtabstop=4 tabstop=4
 
 " Backup
-set backup
-set backupdir=./.backup,.
+set backup backupdir=./.backup,.
 " The double quotes are here to ensure this works with paths that include
 " spaces
 autocmd BufWrite * silent execute '!mkdir -p "' . expand('<afile>:h') . '/.backup"'
 
-" Search
-set incsearch
-set hlsearch
-set ignorecase
-set smartcase
-
-" Backspace
-set backspace=eol,start,indent
-set whichwrap+=<,>
-
-" Miscellaneous
+" Everything Else
+set incsearch hlsearch ignorecase smartcase
+set backspace=eol,start,indent whichwrap+=<,>
 set mouse=a
 set nowrap
 set lazyredraw
-set showmatch matchtime=4 
+set showmatch matchtime=4
 set visualbell
+set ruler
+set wildmenu wildignore+=.git/*,.backup/*
+set cmdheight=2
 let g:jsx_ext_required = 0
