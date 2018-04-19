@@ -11,6 +11,7 @@ colorscheme eldar
 
 autocmd BufRead,BufNewFile * setfiletype text
 autocmd FileType text setlocal autoindent textwidth=78 formatoptions+=n
+autocmd FileType markdown setlocal textwidth=78
 autocmd FileType tex setlocal textwidth=78
 
 " Debugging
