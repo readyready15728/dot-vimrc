@@ -20,8 +20,8 @@ autocmd FileType tex setlocal textwidth=78
 " set verbosefile=~/.vim/verbose.log
 
 " Indentation
-set expandtab shiftwidth=2 softtabstop=2 tabstop=2
-autocmd FileType python setlocal shiftwidth=4 softtabstop=4 tabstop=4
+set expandtab shiftwidth=2 tabstop=2
+autocmd FileType python setlocal shiftwidth=4 tabstop=4
 
 " Backup
 set backup backupdir=./.backup,.
