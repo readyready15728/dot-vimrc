@@ -21,3 +21,14 @@ options are possible):
 ```bash
 python3 install.py --js-completer --java-completer
 ```
+
+One other thing I've noticed is that, if this configuration is to be used on
+Google Cloud Shell, the following needs to be added to `$HOME/.bashrc` to
+work:
+
+```bash
+export TERM=xterm-256color
+```
+
+You may as well set the background color in Google Cloud Shell to `#000` then
+to avoid the ugly clash that would happen otherwise.
