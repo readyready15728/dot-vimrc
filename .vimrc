@@ -40,4 +40,5 @@ set visualbell
 set ruler
 set wildmenu wildignore+=.git/*,.backup/*
 set cmdheight=2
+set dictionary=/usr/share/dict/words
 let g:jsx_ext_required = 0
