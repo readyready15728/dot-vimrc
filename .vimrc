@@ -11,7 +11,7 @@ colorscheme eldar
 
 " File Type Handling
 autocmd BufRead,BufNewFile * setfiletype text
-autocmd FileType text setlocal autoindent textwidth=78 formatoptions+=n
+autocmd FileType text setlocal autoindent textwidth=78 formatoptions+=an
 autocmd FileType markdown setlocal textwidth=78
 autocmd FileType tex setlocal textwidth=78
 
@@ -21,6 +21,7 @@ autocmd FileType tex setlocal textwidth=78
 
 " Indentation
 set expandtab shiftwidth=2 tabstop=2
+set shiftround
 autocmd FileType python setlocal shiftwidth=4 tabstop=4
 
 " Backup
@@ -37,8 +38,9 @@ set nowrap
 set lazyredraw
 set showmatch matchtime=4
 set visualbell
-set ruler
-set wildmenu wildignore+=.git/*,.backup/*
+set ruler number
+set laststatus=2
 set cmdheight=2
+set wildmenu wildignore+=.git/*,.backup/*
 set dictionary=/usr/share/dict/words
 let g:jsx_ext_required = 0
