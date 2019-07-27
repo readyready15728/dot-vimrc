@@ -14,6 +14,8 @@ autocmd BufRead,BufNewFile * setfiletype text
 autocmd FileType text setlocal autoindent textwidth=78 formatoptions+=n
 autocmd FileType markdown setlocal textwidth=78
 autocmd FileType tex setlocal textwidth=78
+let g:tex_flavor = 'latex' "← Required by LaTeX-Suite
+let g:jsx_ext_required = 0
 
 " Debugging
 " set verbose=9
@@ -48,4 +50,3 @@ set laststatus=2
 set cmdheight=2
 set wildmenu wildignore+=.git/*,.backup/*
 set dictionary=/usr/share/dict/words
-let g:jsx_ext_required = 0
