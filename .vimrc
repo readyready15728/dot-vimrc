@@ -15,6 +15,7 @@ autocmd FileType text setlocal autoindent textwidth=78 formatoptions+=n
 autocmd FileType markdown setlocal textwidth=78
 autocmd FileType tex setlocal textwidth=78
 let g:tex_flavor = 'latex' "← Required by LaTeX-Suite
+let g:Tex_Folding = 0
 let g:jsx_ext_required = 0
 
 " Debugging
