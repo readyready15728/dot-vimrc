@@ -34,11 +34,6 @@ set backup backupdir=./.backup,.
 " spaces
 autocmd BufWrite * silent execute '!mkdir -p "' . expand('<afile>:h') . '/.backup"'
 
-" Merlin
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-execute "set rtp+=" . g:opamshare . "/merlin/vim"
-execute "helptags " . g:opamshare . "/merlin/vim/doc"
-
 " Everything Else
 set incsearch hlsearch ignorecase smartcase
 set backspace=eol,start,indent whichwrap+=<,>
