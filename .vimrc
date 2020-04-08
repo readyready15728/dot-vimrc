@@ -8,6 +8,8 @@ set encoding=utf-8
 filetype plugin indent on
 syntax enable
 colorscheme eldar
+" Transparent background
+highlight normal guibg=NONE ctermbg=NONE
 
 " File Type Handling
 autocmd BufRead,BufNewFile * setfiletype text
