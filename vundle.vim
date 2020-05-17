@@ -22,6 +22,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-latex/vim-latex'
 Plugin 'zxqfl/tabnine-vim'
 Plugin 'tmux-plugins/vim-tmux'
+Plugin 'sevko/vim-nand2tetris-syntax'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
