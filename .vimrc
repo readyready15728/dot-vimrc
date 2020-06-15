@@ -16,6 +16,7 @@ autocmd BufRead,BufNewFile * setfiletype text
 autocmd FileType text setlocal autoindent textwidth=78 formatoptions+=n
 autocmd FileType markdown setlocal textwidth=78
 autocmd FileType tex setlocal textwidth=78
+autocmd FileType make setlocal noexpandtab
 let g:tex_flavor = 'latex' "← Required by LaTeX-Suite
 let g:Tex_Folding = 0
 let g:Imap_UsePlaceHolders = 0
