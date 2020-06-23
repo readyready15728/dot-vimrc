@@ -18,6 +18,7 @@ autocmd FileType markdown setlocal textwidth=78
 autocmd FileType tex setlocal textwidth=78
 autocmd FileType make setlocal noexpandtab
 autocmd BufRead,BufNewFile *.sc set filetype=scala
+autocmd FileType racket setlocal lisp
 let g:tex_flavor = 'latex' "← Required by LaTeX-Suite
 let g:Tex_Folding = 0
 let g:Imap_UsePlaceHolders = 0
