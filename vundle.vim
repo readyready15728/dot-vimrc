@@ -27,6 +27,7 @@ Plugin 'wlangstroth/vim-racket'
 Plugin 'junegunn/rainbow_parentheses.vim'
 Plugin 'petRUShka/vim-sage'
 Plugin 'elixir-editors/vim-elixir'
+Plugin 'vim-python/python-syntax'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
