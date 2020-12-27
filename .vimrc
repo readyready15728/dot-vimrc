@@ -19,12 +19,12 @@ autocmd FileType tex setlocal textwidth=78
 autocmd FileType make setlocal noexpandtab
 autocmd BufRead,BufNewFile *.sc set filetype=scala
 autocmd FileType racket setlocal lisp
-autocmd FileType racket RainbowParentheses
 let g:tex_flavor = 'latex' "← Required by LaTeX-Suite
 let g:Tex_Folding = 0
 let g:Imap_UsePlaceHolders = 0
 let g:jsx_ext_required = 0
 let g:python_highlight_all = 1
+let g:rainbow_active = 1
 
 " Debugging
 " set verbose=9
