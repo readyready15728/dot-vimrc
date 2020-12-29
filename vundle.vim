@@ -28,6 +28,7 @@ Plugin 'petRUShka/vim-sage'
 Plugin 'elixir-editors/vim-elixir'
 Plugin 'vim-python/python-syntax'
 Plugin 'luochen1990/rainbow'
+Plugin 'Shirk/vim-gas'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
