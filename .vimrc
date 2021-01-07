@@ -25,7 +25,11 @@ let g:Imap_UsePlaceHolders = 0
 let g:jsx_ext_required = 0
 let g:python_highlight_all = 1
 let g:rainbow_active = 1
+<<<<<<< HEAD
 let g:ycm_show_diagnostics_ui = 0
+=======
+let g:asmsyntax = 'nasm'
+>>>>>>> 0c39672ad0dafe1d91f8a341cbcc400a33fce339
 
 " Debugging
 " set verbose=9
