@@ -56,3 +56,4 @@ set laststatus=2
 set cmdheight=2
 set wildmenu wildignore+=.git/*,.backup/*
 set dictionary=/usr/share/dict/words
+set nofoldenable
