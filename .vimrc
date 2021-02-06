@@ -7,7 +7,7 @@ set termguicolors
 set encoding=utf-8
 filetype plugin indent on
 syntax enable
-colorscheme eldar
+colorscheme jellybeans
 " Transparent background
 highlight normal guibg=NONE ctermbg=NONE
 
