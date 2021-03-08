@@ -7,7 +7,7 @@ set termguicolors
 set encoding=utf-8
 filetype plugin indent on
 syntax enable
-colorscheme eldar
+colorscheme jellybeans
 " Transparent background
 highlight normal guibg=NONE ctermbg=NONE
 
@@ -27,6 +27,9 @@ let g:python_highlight_all = 1
 let g:rainbow_active = 1
 let g:ycm_show_diagnostics_ui = 0
 let g:asmsyntax = 'nasm'
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
+execute "helptags " . g:opamshare . "/merlin/vim/doc"
 
 " Debugging
 " set verbose=9
