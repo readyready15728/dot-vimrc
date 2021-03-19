@@ -31,6 +31,7 @@ let g:asmsyntax = 'nasm'
 let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
 execute "helptags " . g:opamshare . "/merlin/vim/doc"
+execute "set rtp^=" . g:opamshare . "/ocp-indent/vim/"
 
 " Debugging
 " set verbose=9
