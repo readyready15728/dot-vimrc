@@ -10,6 +10,7 @@ syntax enable
 colorscheme jellybeans
 " Transparent background
 highlight normal guibg=NONE ctermbg=NONE
+highlight EndOfBuffer guibg=NONE ctermbg=NONE
 
 " File Type Handling
 autocmd BufRead,BufNewFile * setfiletype text
