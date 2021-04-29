@@ -32,6 +32,7 @@ Plugin 'readyready15728/vim-asm-indent'
 Plugin 'jez/vim-better-sml'
 Plugin 'fsharp/vim-fsharp'
 Plugin 'mitsuhiko/vim-jinja'
+Plugin 'chr4/nginx'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
