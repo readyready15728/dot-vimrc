@@ -29,7 +29,7 @@ let g:python_highlight_all = 1
 let g:rainbow_active = 1
 let g:ycm_show_diagnostics_ui = 0
 let g:asmsyntax = 'nasm'
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+let g:opamshare = substitute(system('opam var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
 execute "helptags " . g:opamshare . "/merlin/vim/doc"
 execute "set rtp^=" . g:opamshare . "/ocp-indent/vim/"
