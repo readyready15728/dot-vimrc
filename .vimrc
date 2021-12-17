@@ -41,7 +41,7 @@ execute "set rtp^=" . g:opamshare . "/ocp-indent/vim/"
 " Indentation
 set expandtab shiftwidth=2 tabstop=2
 set shiftround
-autocmd FileType python setlocal shiftwidth=4 tabstop=4
+autocmd FileType python setlocal shiftwidth=4 tabstop=4 " Four spaces is considered best practices for Python
 
 " Backup
 set backup backupdir=./.backup,.
