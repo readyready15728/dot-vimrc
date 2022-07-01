@@ -34,6 +34,7 @@ Plugin 'fsharp/vim-fsharp'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'chr4/nginx'
 Plugin 'dag/vim-fish'
+Plugin 'vim-perl/vim-perl'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
