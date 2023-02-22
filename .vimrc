@@ -1,5 +1,38 @@
-" Vundle
-runtime vundle.vim
+" vim-plug
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
+
+Plug 'jelera/vim-javascript-syntax'
+Plug 'pangloss/vim-javascript'
+Plug 'flazz/vim-colorschemes'
+Plug 'agude/vim-eldar'
+Plug 'mxw/vim-jsx'
+Plug 'leafgarland/typescript-vim'
+Plug 'digitaltoad/vim-pug'
+Plug 'scrooloose/nerdtree'
+Plug 'vim-latex/vim-latex'
+Plug 'ycm-core/YouCompleteMe'
+Plug 'tmux-plugins/vim-tmux'
+Plug 'wlangstroth/vim-racket'
+Plug 'petRUShka/vim-sage'
+Plug 'elixir-editors/vim-elixir'
+Plug 'vim-python/python-syntax'
+Plug 'luochen1990/rainbow'
+Plug 'Shirk/vim-gas'
+Plug 'readyready15728/vim-asm-indent'
+Plug 'jez/vim-better-sml'
+Plug 'fsharp/vim-fsharp'
+Plug 'mitsuhiko/vim-jinja'
+Plug 'chr4/nginx'
+Plug 'dag/vim-fish'
+Plug 'vim-perl/vim-perl'
+
+call plug#end()
 
 " General
 set t_Co=256
