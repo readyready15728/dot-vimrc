@@ -31,6 +31,7 @@ Plug 'mitsuhiko/vim-jinja'
 Plug 'chr4/nginx'
 Plug 'dag/vim-fish'
 Plug 'vim-perl/vim-perl'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
