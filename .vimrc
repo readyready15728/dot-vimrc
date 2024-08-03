@@ -64,6 +64,7 @@ let g:rainbow_active = 1
 let g:ycm_show_diagnostics_ui = 0
 let g:asmsyntax = 'nasm'
 let g:opamshare = substitute(system('opam var share'),'\n$','','''')
+let g:markdown_recommended_style = 0
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
 execute "helptags " . g:opamshare . "/merlin/vim/doc"
 execute "set rtp^=" . g:opamshare . "/ocp-indent/vim/"
