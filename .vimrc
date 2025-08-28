@@ -32,6 +32,7 @@ Plug 'chr4/nginx'
 Plug 'dag/vim-fish'
 Plug 'vim-perl/vim-perl'
 Plug 'tpope/vim-fugitive'
+Plug 'cwshugg/dwarrowdelf'
 
 call plug#end()
 
@@ -41,7 +42,7 @@ set termguicolors
 set encoding=utf-8
 filetype plugin indent on
 syntax enable
-colorscheme jellybeans
+colorscheme dwarrowdelf
 " Transparent background
 highlight normal guibg=NONE ctermbg=NONE
 highlight EndOfBuffer guibg=NONE ctermbg=NONE
