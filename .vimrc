@@ -7,32 +7,34 @@ endif
 
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
-Plug 'jelera/vim-javascript-syntax'
-Plug 'pangloss/vim-javascript'
-Plug 'flazz/vim-colorschemes'
-Plug 'agude/vim-eldar'
-Plug 'mxw/vim-jsx'
-Plug 'leafgarland/typescript-vim'
-Plug 'digitaltoad/vim-pug'
-Plug 'scrooloose/nerdtree'
-Plug 'vim-latex/vim-latex'
-Plug 'ycm-core/YouCompleteMe'
-Plug 'tmux-plugins/vim-tmux'
-Plug 'wlangstroth/vim-racket'
-Plug 'petRUShka/vim-sage'
-Plug 'elixir-editors/vim-elixir'
-Plug 'vim-python/python-syntax'
-Plug 'luochen1990/rainbow'
 Plug 'Shirk/vim-gas'
-Plug 'readyready15728/vim-asm-indent'
-Plug 'jez/vim-better-sml'
-Plug 'fsharp/vim-fsharp'
-Plug 'mitsuhiko/vim-jinja'
+Plug 'agude/vim-eldar'
+Plug 'airblade/vim-gitgutter'
 Plug 'chr4/nginx'
-Plug 'dag/vim-fish'
-Plug 'vim-perl/vim-perl'
-Plug 'tpope/vim-fugitive'
 Plug 'cwshugg/dwarrowdelf'
+Plug 'dag/vim-fish'
+Plug 'digitaltoad/vim-pug'
+Plug 'elixir-editors/vim-elixir'
+Plug 'flazz/vim-colorschemes'
+Plug 'fsharp/vim-fsharp'
+Plug 'jelera/vim-javascript-syntax'
+Plug 'jez/vim-better-sml'
+Plug 'leafgarland/typescript-vim'
+Plug 'luochen1990/rainbow'
+Plug 'mitsuhiko/vim-jinja'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
+Plug 'petRUShka/vim-sage'
+Plug 'readyready15728/vim-asm-indent'
+Plug 'scrooloose/nerdtree'
+Plug 'tmux-plugins/vim-tmux'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-latex/vim-latex'
+Plug 'vim-perl/vim-perl'
+Plug 'vim-python/python-syntax'
+Plug 'wlangstroth/vim-racket'
+Plug 'ycm-core/YouCompleteMe'
 
 call plug#end()
 
@@ -70,7 +72,25 @@ execute "set rtp+=" . g:opamshare . "/merlin/vim"
 execute "helptags " . g:opamshare . "/merlin/vim/doc"
 execute "set rtp^=" . g:opamshare . "/ocp-indent/vim/"
 
+" " LSP
+" let lsp_opts = #{autoHighlightDiags: v:true}
+" autocmd User LspSetup call LspOptionsSet(lsp_opts)
+" 
+" let lsp_servers = [ #{
+"       \   name: 'pyright',
+"       \   filetype: ['python'],
+"       \   path: '/snap/bin/pyright-langserver',
+"       \   args: ['--stdio'],
+"       \   workspaceConfig: #{
+"       \     python: #{
+"       \       pythonPath: '/usr/bin/python'
+"       \     }}
+"       \ }]
+" 
+" autocmd User LspSetup call LspAddServer(lsp_servers)
+
 " Debugging
+"
 " set verbose=9
 " set verbosefile=~/.vim/verbose.log
 
@@ -79,11 +99,15 @@ set expandtab shiftwidth=2 tabstop=2
 set shiftround
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 " Four spaces is considered best practices for Python
 
+" gitgutter
+let g:gitgutter_override_sign_column_highlight = 1
+highlight SignColumn guibg=NONE ctermbg=NONE
+
 " Backup
-set backup backupdir=./.backup,.
+" set backup backupdir=./.backup,.
 " The double quotes are here to ensure this works with paths that include
 " spaces
-autocmd BufWrite * silent execute '!mkdir -p "' . expand('<afile>:h') . '/.backup"'
+" autocmd BufWrite * silent execute '!mkdir -p "' . expand('<afile>:h') . '/.backup"'
 
 " Everything Else
 set incsearch hlsearch ignorecase smartcase
