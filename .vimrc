@@ -124,12 +124,6 @@ map <Leader>n :NERDTreeToggle<CR>
 let g:gitgutter_override_sign_column_highlight = 1
 highlight SignColumn guibg=NONE ctermbg=NONE
 
-" Backup
-" set backup backupdir=./.backup,.
-" The double quotes are here to ensure this works with paths that include
-" spaces
-" autocmd BufWrite * silent execute '!mkdir -p "' . expand('<afile>:h') . '/.backup"'
-
 " Everything Else
 set incsearch hlsearch ignorecase smartcase
 set backspace=eol,start,indent whichwrap+=<,>
