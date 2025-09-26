@@ -144,3 +144,4 @@ set cmdheight=2
 set wildmenu wildignore+=.git/*,.backup/*
 set dictionary=/usr/share/dict/words
 set nofoldenable
+set splitbelow splitright
