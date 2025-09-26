@@ -124,6 +124,9 @@ map <Leader>n :NERDTreeToggle<CR>
 let g:fzf_layout = { 'down': '~40%' }
 nnoremap <Leader><Leader> :Files<cr>
 
+" vim-closetag
+let g:closetag_filenames = '*.html,*.xhtml,*.jsx,*.tsx'
+
 let g:gitgutter_override_sign_column_highlight = 1
 highlight SignColumn guibg=NONE ctermbg=NONE
 
