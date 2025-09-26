@@ -7,6 +7,7 @@ endif
 
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
+Plug 'LunarWatcher/auto-pairs'
 Plug 'Shirk/vim-gas'
 Plug 'agude/vim-eldar'
 Plug 'airblade/vim-gitgutter'
