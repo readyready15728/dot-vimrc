@@ -120,6 +120,10 @@ let NERDTreeQuitOnOpen=1
 map <Leader>n :NERDTreeToggle<CR>
 
 " gitgutter
+" fzf
+let g:fzf_layout = { 'down': '~40%' }
+nnoremap <Leader><Leader> :Files<cr>
+
 let g:gitgutter_override_sign_column_highlight = 1
 highlight SignColumn guibg=NONE ctermbg=NONE
 
