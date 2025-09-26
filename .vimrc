@@ -119,7 +119,6 @@ let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 map <Leader>n :NERDTreeToggle<CR>
 
-" gitgutter
 " fzf
 let g:fzf_layout = { 'down': '~40%' }
 nnoremap <Leader><Leader> :Files<cr>
@@ -127,6 +126,7 @@ nnoremap <Leader><Leader> :Files<cr>
 " vim-closetag
 let g:closetag_filenames = '*.html,*.xhtml,*.jsx,*.tsx'
 
+" vim-gitgutter
 let g:gitgutter_override_sign_column_highlight = 1
 highlight SignColumn guibg=NONE ctermbg=NONE
 
