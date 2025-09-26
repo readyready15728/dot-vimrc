@@ -23,6 +23,8 @@ Plug 'flazz/vim-colorschemes'
 Plug 'fsharp/vim-fsharp'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'jez/vim-better-sml'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'luochen1990/rainbow'
 Plug 'mitsuhiko/vim-jinja'
