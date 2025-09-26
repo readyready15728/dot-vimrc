@@ -110,6 +110,10 @@ set expandtab shiftwidth=2 tabstop=2
 set shiftround
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 " Four spaces is considered best practices for Python
 
+" Non-Specific Keybindings
+let mapleader = "\<Space>"
+" Needed this on Ubuntu with DigitalOcean
+noremap! <C-?> <C-h>
 " gitgutter
 let g:gitgutter_override_sign_column_highlight = 1
 highlight SignColumn guibg=NONE ctermbg=NONE
