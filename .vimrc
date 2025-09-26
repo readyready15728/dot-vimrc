@@ -114,6 +114,12 @@ autocmd FileType python setlocal shiftwidth=4 tabstop=4 " Four spaces is conside
 let mapleader = "\<Space>"
 " Needed this on Ubuntu with DigitalOcean
 noremap! <C-?> <C-h>
+
+" NERDTree
+let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen=1
+map <Leader>n :NERDTreeToggle<CR>
+
 " gitgutter
 let g:gitgutter_override_sign_column_highlight = 1
 highlight SignColumn guibg=NONE ctermbg=NONE
