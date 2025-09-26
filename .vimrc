@@ -61,7 +61,6 @@ highlight normal guibg=NONE ctermbg=NONE
 highlight EndOfBuffer guibg=NONE ctermbg=NONE
 
 " File Type Handling
-autocmd BufRead,BufNewFile * setfiletype text
 autocmd FileType text setlocal autoindent textwidth=78 formatoptions+=n
 autocmd FileType markdown setlocal textwidth=78
 autocmd FileType tex setlocal textwidth=78
