@@ -7,7 +7,8 @@ endif
 
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
-Plug 'LunarWatcher/auto-pairs'
+" The below interferes with vim-closetag, which I chose to have instead
+" Plug 'LunarWatcher/auto-pairs' 
 Plug 'Shirk/vim-gas'
 Plug 'agude/vim-eldar'
 Plug 'airblade/vim-gitgutter'
