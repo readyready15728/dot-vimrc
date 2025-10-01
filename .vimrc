@@ -8,7 +8,7 @@ endif
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 " The below interferes with vim-closetag, which I chose to have instead
-" Plug 'LunarWatcher/auto-pairs' 
+" Plug 'LunarWatcher/auto-pairs'
 Plug 'Shirk/vim-gas'
 Plug 'agude/vim-eldar'
 Plug 'airblade/vim-gitgutter'
@@ -87,7 +87,7 @@ execute "set rtp^=" . g:opamshare . "/ocp-indent/vim/"
 " " LSP
 " let lsp_opts = #{autoHighlightDiags: v:true}
 " autocmd User LspSetup call LspOptionsSet(lsp_opts)
-" 
+"
 " let lsp_servers = [ #{
 "       \   name: 'pyright',
 "       \   filetype: ['python'],
@@ -98,7 +98,7 @@ execute "set rtp^=" . g:opamshare . "/ocp-indent/vim/"
 "       \       pythonPath: '/usr/bin/python'
 "       \     }}
 "       \ }]
-" 
+"
 " autocmd User LspSetup call LspAddServer(lsp_servers)
 
 " Debugging
