@@ -22,6 +22,7 @@ Plug 'digitaltoad/vim-pug'
 Plug 'elixir-editors/vim-elixir'
 Plug 'flazz/vim-colorschemes'
 Plug 'fsharp/vim-fsharp'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 Plug 'jelera/vim-javascript-syntax'
 Plug 'jez/vim-better-sml'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -128,6 +129,9 @@ nnoremap <C-]> :ALEGoToDefinition<CR>
 " fzf
 let g:fzf_layout = { 'down': '~40%' }
 nnoremap <Leader><Leader> :Files<cr>
+
+" markdown-preview.nvim
+nmap <C-p> <Plug>MarkdownPreviewToggle
 
 " vim-closetag
 let g:closetag_filenames = '*.html,*.xhtml,*.jsx,*.tsx'
