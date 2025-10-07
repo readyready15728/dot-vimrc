@@ -122,6 +122,9 @@ let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 map <Leader>n :NERDTreeToggle<CR>
 
+" ale
+nnoremap <C-]> :ALEGoToDefinition<CR>
+
 " fzf
 let g:fzf_layout = { 'down': '~40%' }
 nnoremap <Leader><Leader> :Files<cr>
