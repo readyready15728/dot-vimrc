@@ -49,7 +49,6 @@ Plug 'vim-latex/vim-latex'
 Plug 'vim-perl/vim-perl'
 Plug 'vim-python/python-syntax'
 Plug 'wlangstroth/vim-racket'
-Plug 'ycm-core/YouCompleteMe'
 
 call plug#end()
 
