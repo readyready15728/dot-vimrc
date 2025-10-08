@@ -128,10 +128,8 @@ map <Leader>n :NERDTreeToggle<CR>
 
 " ale
 nnoremap <C-]> :ALEGoToDefinition<CR>
-nnoremap ]g :ALENextWrap<CR>
-nnoremap [g :ALEPreviousWrap<CR>
-nnoremap <leader>d :ALEDetail<cr>
-
+nnoremap <C-[> :ALEFindReferences<cr>
+nnoremap <C-h> :ALEHover<cr>
 " fzf
 let g:fzf_layout = { 'down': '~40%' }
 nnoremap <Leader><Leader> :Files<cr>
