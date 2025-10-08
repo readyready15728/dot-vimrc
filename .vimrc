@@ -125,6 +125,9 @@ map <Leader>n :NERDTreeToggle<CR>
 
 " ale
 nnoremap <C-]> :ALEGoToDefinition<CR>
+nnoremap ]g :ALENextWrap<CR>
+nnoremap [g :ALEPreviousWrap<CR>
+nnoremap <leader>d :ALEDetail<cr>
 
 " fzf
 let g:fzf_layout = { 'down': '~40%' }
